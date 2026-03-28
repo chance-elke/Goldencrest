@@ -55,15 +55,15 @@ export default function TermsPage() {
                   This website is a lead generation platform operated by an independent party unaffiliated
                   with any of the gold IRA companies reviewed or listed on this Site. When you submit your
                   information through any form on this Site, you are providing that information to{' '}
-                  <strong>this site's operator</strong>, not to the gold IRA companies reviewed or
+                  <strong>this site&apos;s operator</strong>, not to the gold IRA companies reviewed or
                   listed on this Site.
                 </p>
               </div>
               <p className="leading-relaxed mb-3">By submitting a form on this Site, you acknowledge and agree that:</p>
               <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
-                <li>Your information is received by this site's operator, not by any reviewed company</li>
-                <li>This site's operator may contact you directly via phone, email, or text message</li>
-                <li>This site's operator may share your information with selected partner companies</li>
+                <li>Your information is received by this site&apos;s operator, not by any reviewed company</li>
+                <li>This site&apos;s operator may contact you directly via phone, email, or text message</li>
+                <li>This site&apos;s operator may share your information with selected partner companies</li>
                 <li>Submitting this form does not create a relationship with any reviewed company</li>
                 <li>You consent to be contacted, including by automated dialing systems, at the phone number provided</li>
                 <li>You can opt out of communications at any time by contacting us</li>
