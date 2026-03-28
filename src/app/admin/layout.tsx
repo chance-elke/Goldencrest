@@ -12,6 +12,7 @@ import {
   LogOut,
   Menu,
   X,
+  BarChart2,
 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
@@ -19,6 +20,7 @@ import { cn } from '@/lib/utils'
 const navItems = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard, exact: true },
   { href: '/admin/leads', label: 'Leads', icon: Users, exact: false },
+  { href: '/admin/visitors', label: 'Visitors', icon: BarChart2, exact: false },
   { href: '/admin/companies', label: 'Companies', icon: Building2, exact: false },
   { href: '/admin/settings', label: 'Settings', icon: Settings, exact: false },
 ]

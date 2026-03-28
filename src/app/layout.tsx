@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Suspense } from 'react'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import PageTracker from '@/components/PageTracker'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -68,6 +70,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
+        <Suspense fallback={null}>
+          <PageTracker />
+        </Suspense>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
