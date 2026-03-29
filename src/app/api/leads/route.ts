@@ -65,9 +65,9 @@ export async function POST(request: NextRequest) {
     }).select('id').single()
 
     if (error) {
-      console.error('Supabase insert error:', error)
+      console.error('Supabase insert error:', JSON.stringify(error))
       return NextResponse.json(
-        { error: 'Failed to save your information. Please try again.' },
+        { error: 'Failed to save your information. Please try again.', debug: { message: error.message, code: error.code, details: error.details, hint: error.hint } },
         { status: 500 }
       )
     }
